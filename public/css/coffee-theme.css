@@ -1,0 +1,267 @@
+/* ============================================================
+   SENSASI COFFEE BY TOBACO — Color Theme Override
+   Pasang SETELAH css/components.css di app.blade.php:
+   <link rel="stylesheet" href="{{ asset('css/coffee-theme.css') }}">
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── Tokens ─────────────────────────────────────────────── */
+:root {
+    --coffee-espresso:   #2E1A0E;
+    --coffee-dark:       #3D2412;
+    --coffee-mocha:      #5A3E28;
+    --coffee-latte:      #C8956C;
+    --coffee-latte-h:    #D9A87E;
+    --coffee-cream:      #FAF6F0;
+    --coffee-sand:       #EDE4D8;
+    --coffee-sand-lt:    #F5EDE2;
+    --coffee-muted:      #A08060;
+}
+
+/* ── Body & page background ─────────────────────────────── */
+body {
+    font-family: 'DM Sans', system-ui, sans-serif !important;
+    background-color: var(--coffee-cream) !important;
+}
+
+/* ── Navbar ──────────────────────────────────────────────── */
+.navbar-bg {
+    background-color: #fff !important;
+    border-bottom: 1px solid var(--coffee-sand) !important;
+    box-shadow: none !important;
+}
+
+.main-navbar {
+    background-color: #fff !important;
+    border-bottom: 1px solid var(--coffee-sand) !important;
+    box-shadow: none !important;
+}
+
+/* Toggle icon */
+.main-navbar .nav-link-lg {
+    color: var(--coffee-mocha) !important;
+}
+
+.main-navbar .nav-link-lg:hover {
+    background-color: var(--coffee-sand-lt) !important;
+    color: var(--coffee-espresso) !important;
+}
+
+/* User dropdown trigger */
+.main-navbar .nav-link-user {
+    color: var(--coffee-espresso) !important;
+}
+
+.main-navbar .nav-link-user:hover {
+    background-color: var(--coffee-sand-lt) !important;
+}
+
+/* Dropdown menu */
+.main-navbar .dropdown-menu {
+    border-color: var(--coffee-sand) !important;
+    box-shadow: 0 8px 20px rgba(46,26,14,.10) !important;
+}
+
+.main-navbar .dropdown-title {
+    color: var(--coffee-muted) !important;
+    border-bottom-color: var(--coffee-sand) !important;
+}
+
+.main-navbar .dropdown-item {
+    color: var(--coffee-mocha) !important;
+}
+
+.main-navbar .dropdown-item:hover {
+    background-color: var(--coffee-sand-lt) !important;
+    color: var(--coffee-espresso) !important;
+}
+
+.main-navbar .dropdown-divider {
+    border-color: var(--coffee-sand) !important;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+.main-sidebar,
+.main-sidebar .sidebar-style-2 {
+    background-color: var(--coffee-espresso) !important;
+}
+
+/* Brand / nama cafe */
+.sidebar-brand,
+.sidebar-brand-sm {
+    border-bottom: 1px solid var(--coffee-dark) !important;
+}
+
+.sidebar-brand a,
+.sidebar-brand-sm a {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-style: italic !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #F5E6D3 !important;
+}
+
+/* Section headers */
+.sidebar-menu .menu-header {
+    color: var(--coffee-mocha) !important;
+    letter-spacing: 1.2px !important;
+}
+
+/* Nav links */
+.sidebar-menu > li > .nav-link,
+.sidebar-menu .nav-link {
+    color: #A07858 !important;
+}
+
+.sidebar-menu > li > .nav-link:hover {
+    background-color: var(--coffee-dark) !important;
+    color: var(--coffee-latte-h) !important;
+}
+
+.sidebar-menu > li > .nav-link i {
+    color: inherit !important;
+}
+
+/* Active item */
+.sidebar-menu > li.active > .nav-link,
+.sidebar-menu > li.active > .nav-link i {
+    color: var(--coffee-latte) !important;
+}
+
+.sidebar-menu > li.active > .nav-link {
+    background-color: rgba(200,149,108,.12) !important;
+    border-left: 3px solid var(--coffee-latte) !important;
+}
+
+/* Sub-menu items (dropdown) */
+.sidebar-menu .dropdown-menu {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.sidebar-menu .dropdown-menu li a {
+    color: #7A5A3A !important;
+}
+
+.sidebar-menu .dropdown-menu li a:hover,
+.sidebar-menu .dropdown-menu li.active a {
+    color: var(--coffee-latte) !important;
+    background-color: transparent !important;
+}
+
+/* ── Cards ───────────────────────────────────────────────── */
+.card {
+    border-color: var(--coffee-sand) !important;
+    box-shadow: none !important;
+}
+
+.card-header {
+    background-color: #fff !important;
+    border-bottom-color: var(--coffee-sand) !important;
+    color: var(--coffee-espresso) !important;
+}
+
+.card-header h4 {
+    font-family: 'Playfair Display', serif !important;
+    color: var(--coffee-espresso) !important;
+}
+
+/* ── Tables ──────────────────────────────────────────────── */
+.table thead th {
+    background-color: var(--coffee-cream) !important;
+    color: var(--coffee-mocha) !important;
+    border-bottom-color: var(--coffee-sand) !important;
+}
+
+.table tbody td {
+    border-color: var(--coffee-sand-lt) !important;
+    color: var(--coffee-mocha) !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--coffee-cream) !important;
+}
+
+.table tbody tr:hover td {
+    background-color: var(--coffee-sand-lt) !important;
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.btn-primary {
+    background-color: var(--coffee-latte) !important;
+    border-color: var(--coffee-latte) !important;
+    color: var(--coffee-espresso) !important;
+    font-weight: 500 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--coffee-latte-h) !important;
+    border-color: var(--coffee-latte-h) !important;
+    color: var(--coffee-espresso) !important;
+}
+
+.btn-outline-primary {
+    color: var(--coffee-latte) !important;
+    border-color: var(--coffee-latte) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--coffee-latte) !important;
+    color: var(--coffee-espresso) !important;
+}
+
+/* ── Form controls ───────────────────────────────────────── */
+.form-control {
+    border-color: var(--coffee-sand) !important;
+    color: var(--coffee-espresso) !important;
+    background-color: #fff !important;
+}
+
+.form-control:focus {
+    border-color: var(--coffee-latte) !important;
+    box-shadow: 0 0 0 3px rgba(200,149,108,.18) !important;
+}
+
+/* ── Badges / Pills ──────────────────────────────────────── */
+.badge-primary {
+    background-color: var(--coffee-latte) !important;
+    color: var(--coffee-espresso) !important;
+}
+
+/* ── Links ───────────────────────────────────────────────── */
+a {
+    color: var(--coffee-latte) !important;
+}
+
+a:hover {
+    color: var(--coffee-latte-h) !important;
+}
+
+/* Keep danger/success/warning links untouched */
+a.text-danger  { color: #e3342f !important; }
+a.text-success { color: #38c172 !important; }
+
+/* ── Section titles / Page heading ──────────────────────── */
+.section-header h1,
+.section-header .section-title {
+    font-family: 'Playfair Display', serif !important;
+    color: var(--coffee-espresso) !important;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.main-footer {
+    background-color: #fff !important;
+    border-top: 1px solid var(--coffee-sand) !important;
+    color: var(--coffee-muted) !important;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+    background-color: #D4BBA0;
+    border-radius: 3px;
+}
